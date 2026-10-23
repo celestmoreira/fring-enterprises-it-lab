@@ -61,6 +61,52 @@ ISO files are large binary files. Our repository should
 contain documentation, configuration examples, and
 sanitized screenshots rather than installation media.
 
+## FE-DC01 Virtual Machine Deployment
+
+### Objective
+Create and install the first Windows Server VM for
+Fring Enterprises.
+
+### Configuration
+- VM Name: FE-DC01
+- Operating System: Windows Server 2025 Evaluation
+- Hypervisor: Oracle VirtualBox
+- Virtual CPUs: 2
+- RAM: 6144 MB
+- Virtual Disk: 80 GB (dynamically allocated)
+- Firmware: EFI
+- Initial Network: NAT
+
+### Procedure
+1. Created a new virtual machine in VirtualBox.
+2. Mounted the Windows Server 2025 ISO.
+3. Allocated virtual CPU, memory, and storage.
+4. Configured NAT networking.
+5. Installed Windows Server with Desktop Experience.
+6. Verified successful startup.
+
+### Concepts Learned
+- vCPU: Processing resources assigned to a VM.
+- RAM: Temporary memory used by running programs.
+- Virtual Disk: Storage presented to the guest OS.
+- EFI: Firmware interface used during startup.
+- NAT: A method for translating network addresses.
+
+### Verification
+- [ ] VM created successfully
+- [ ] Windows Server installation completed
+- [ ] Server desktop accessible
+- [ ] Screenshot captured
+
+### Evidence
+![FE-DC01 First Boot](../../screenshots/fe-dc01-first-boot.png)
+
+### Next Steps
+- Configure the Windows computer name
+- Design the isolated lab network
+- Configure a static IP address
+- Learn DNS and Active Directory fundamentals
+
 ## Notes
 
 This is an isolated educational lab. No production systems or employer infrastructure are involved.
