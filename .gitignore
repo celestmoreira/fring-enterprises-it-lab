@@ -1,0 +1,23 @@
+# Virtual machines and disk images
+*.vdi
+*.vmdk
+*.vhd
+*.vhdx
+*.ova
+*.ovf
+*.iso
+
+# Credentials and secrets
+.env
+.env.*
+*.key
+*.pem
+*credentials*
+*passwords*
+*recovery-key*
+
+# Local configuration
+.vscode/
+*.log
+.DS_Store
+Thumbs.db
